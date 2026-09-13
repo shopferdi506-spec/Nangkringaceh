@@ -24,7 +24,7 @@ exports.handler = async (event) => {
   for (const endpoint of endpoints) {
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 8000);
+      const timeout = setTimeout(() => controller.abort(), 55000);
 
       const response = await fetch(endpoint, {
         method: 'POST',
